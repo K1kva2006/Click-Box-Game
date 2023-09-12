@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click-Box Game</title>
+    <link rel="icon" href="https://th.bing.com/th/id/OIP.r2qp89_1zm-XBH7JW3K5CQHaHV?pid=ImgDet&rs=1">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="info">
+
+        <div class="rulesBox">
+            <h1>Click-Box Game</h1>
+            <h2 class="rules">RULES</h2> 
+
+            <div id="rulesPop" class="rulesPop">
+                <h2 class="rules2">RULES</h2>
+                <p class="wesebi">შენი მიზანია დააგროვო რაც შეიძლება მეტ ქულა
+                    (რომელიც მოიპოვება "ყუთზე" დაჭერისას)
+                     დროის ამოწურვამდე. დროის ამოუწურვას განაპირობებს ქულების რაოდენობა 
+                    რაც უფრო მეტი ქულა გაქვს მით უფრო მალე გეწურება დრო,
+                     ასევე ყოველ ქულის მოპოვებისას გემატება 1 დროის ერთეული    
+                </p>
+            </div>
+        </div>
+        
+
+        <p class="time-p">
+            Time: <span id="timeText">60</span>
+        </p>
+        <p class="score-p">
+            Score: <span id="scoreText">0</span>
+        </p>
+        <p class="highScore">
+            HighScore: <span id="highScoreText">0</span>  
+        </p>
+        <p class="game-over-none" id="gameOver">GAME OVER YOUR SCORE IS: <span id="gameOverScoreText"></span>
+            <button id="playAgain">Play again</button>
+        </p>
+    </div>
+    <div class="container">
+        <div id="box"></div>
+    </div>
+</body>
+</html>

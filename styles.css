@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body {
+    background-color: #f8dbdb;
+    user-select: none;
+    padding: 20px;
+}
+.info {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.rulesBox {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.rulesPop {
+    position: absolute;
+    top: 0;
+    left: 0;
+   
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    
+    background-color: gray;
+    z-index: 1;
+}
+.rulesPopActive {
+    position: absolute;
+    top: 0;
+    left: 0;
+   
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background-color: gray;
+    z-index: 1;
+}
+
+.wesebi {
+    max-width: 800px;
+    width: 100%;
+}
+h1 {
+    font-size: 25px;
+}
+.rules {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-weight: 100;
+    color: rgb(255, 133, 133);
+}
+.rules2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-weight: 100;
+    color: rgb(255, 133, 133);
+}
+.score-p, .time-p {
+    font-size: 24px;
+}
+.highScore {
+    font-size: 18px;
+}
+#timeText{
+    color: green;
+}
+.game-over {
+    display: block; 
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.game-over-none {
+    display: none;
+}
+
+#playAgain {
+    font-size: 30px;
+    cursor: pointer;
+}
+.container {
+    position: relative;
+
+    max-width: 1200px;
+    width: 100%;
+    max-height: 800px;
+    height: 75vh;
+    margin: 0 auto;
+    border: 2px dashed black;
+    background-color: rgb(235, 230, 230);
+
+}
+#box {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 50px;
+    height: 50px;
+    background-color: rgb(218, 209, 209);
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px){
+    #playAgain, .game-over {
+        font-size: 26px;
+    }
+}
